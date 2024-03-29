@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "systemctl suspend && swaylock",
+    "action" : "pkill wlogout; sleep .5;  swaylock",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -25,3 +25,4 @@
     "text" : "Reboot",
     "keybind" : "r"
 }
+
