@@ -26,3 +26,13 @@
     "keybind" : "r"
 }
 
+{
+    "label" : "reboot->win",
+    "action" : "reboot-win",
+    "text" : "Reboot->Win",
+    "keybind" : "w"
+}
+
+
+
+

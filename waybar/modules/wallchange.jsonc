@@ -1,8 +1,8 @@
     "custom/wallchange": {
-        "format": "{}",
+        "format": "󰆊 {}",
         "exec": "echo ; echo 󰆊 switch wallpaper",
-        "on-click": "wallctl r",
-        "on-click-right": "~/.config/hypr/scripts/wallselect",
+        "on-click": "~/.config/rofi/wallpaper.sh",
+        "on-click-right": "~/.config/rofi/wallpaper.sh",
         "on-click-middle": "~/.config/rofi/wallpaper.sh",
         "interval" : 86400, // once every day
         "tooltip": true

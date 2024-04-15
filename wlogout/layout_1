@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "systemctl suspend && swaylock",
+    "action" : "pkill wlogout; sleep 1.0; swaylock",
     "text" : "Lock",
     "keybind" : "l"
 }
@@ -10,13 +10,6 @@
     "action" : "hyprctl dispatch exit 0",
     "text" : "Logout",
     "keybind" : "e"
-}
-
-{
-    "label" : "suspend",
-    "action" : "systemctl suspend",
-    "text" : "Suspend",
-    "keybind" : "u"
 }
 
 {
@@ -34,8 +27,15 @@
 }
 
 {
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
+    "label" : "reboot-win",
+    "action" : "systemctl reboot --boot-loader-entry=auto-windows",
+    "text" : "Reboot -> Win",
+    "keybind" : "w"
+}
+
+{
+    "label" : "reboot-bios",
+    "action" : "systemctl reboot --boot-loader-entry=auto-reboot-to-firmware-setup",
+    "text" : "Reboot -> Bios",
+    "keybind" : "b"
 }

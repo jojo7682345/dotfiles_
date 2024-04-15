@@ -52,5 +52,5 @@ while ! $wal_selection; do
   fi
 done
 
-wallctl set $wallpaper
+~/.config/hypr/scripts/changeWallpaper.sh $wallpaper
 

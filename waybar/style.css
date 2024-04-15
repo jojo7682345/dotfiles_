@@ -3,8 +3,8 @@
     border-radius: 0px;
     font-family: "Roboto Mono Nerd Font";
     font-weight: bold;
-    font-size: 14px;
-    min-height: 10px;
+    font-size: 15px;
+    min-height: 5px;
 }
 
 @import "themes/evergarden.css";
@@ -16,7 +16,7 @@ window#waybar {
 tooltip {
     background: @tool-bg;
     color: @tool-color;
-    border-radius: 19px;
+    border-radius: 25px;
     border-width: 1px;
     border-style: solid;
     border-color: @tool-border;
@@ -26,11 +26,11 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 8px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     color: @wb-color;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -39,10 +39,10 @@ tooltip {
 #workspaces button.active {
     background: @wb-act-bg;
     color: @wb-act-color;
-    margin-left: 2px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-right: 2px;
+    margin-left: 3px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -50,8 +50,8 @@ tooltip {
 #workspaces button:hover {
     background: @wb-hvr-bg;
     color: @wb-hvr-color;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -60,11 +60,11 @@ tooltip {
     box-shadow: none;
 	text-shadow: none;
     padding: 0px;
-    border-radius: 8px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
     color: @wb-color;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -73,10 +73,10 @@ tooltip {
 #taskbar button.active {
     background: @wb-act-bg;
     color: @wb-act-color;
-    margin-left: 2px;
-    padding-left: 11px;
-    padding-right: 11px;
-    margin-right: 2px;
+    margin-left: 3px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -84,8 +84,8 @@ tooltip {
 #taskbar button:hover {
     background: @wb-hvr-bg;
     color: @wb-hvr-color;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -108,6 +108,7 @@ tooltip {
 #custom-cliphist,
 #custom-power,
 #custom-wbar,
+#custom-player,
 #custom-l_end,
 #custom-r_end,
 #custom-sl_end,
@@ -118,9 +119,9 @@ tooltip {
     color: @main-color;
     background: @main-bg;
     opacity: 1;
-    margin: 3px 0px 3px 0px;
-    padding-left: 4px;
-    padding-right: 4px;
+    margin: 5px 0px 5px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #workspaces,
@@ -129,37 +130,37 @@ tooltip {
 }
 
 #custom-r_end {
-    border-radius: 0px 19px 19px 0px;
-    margin-right: 8px;
-    padding-right: 0px;
+    border-radius: 0px 25px 25px 0px;
+    margin-right: 7px;
+    padding-right: 3px;
 }
 
 #custom-l_end {
-    border-radius: 19px 0px 0px 19px;
-    margin-left: 8px;
-    padding-left: 0px;
+    border-radius: 25px 0px 0px 25px;
+    margin-left: 7px;
+    padding-left: 3px;
 }
 
 #custom-sr_end {
     border-radius: 0px;
-    margin-right: 8px;
-    padding-right: 0px;
+    margin-right: 7px;
+    padding-right: 3px;
 }
 
 #custom-sl_end {
     border-radius: 0px;
-    margin-left: 8px;
-    padding-left: 0px;
+    margin-left: 7px;
+    padding-left: 3px;
 }
 
 #custom-rr_end {
-    border-radius: 0px 7px 7px 0px;
-    margin-right: 8px;
-    padding-right: 0px;
+    border-radius: 0px 9px 9px 0px;
+    margin-right: 7px;
+    padding-right: 3px;
 }
 
 #custom-rl_end {
-    border-radius: 7px 0px 0px 7px;
-    margin-left: 8px;
-    padding-left: 0px;
+    border-radius: 9px 0px 0px 9px;
+    margin-left: 7px;
+    padding-left: 3px;
 }

@@ -10,96 +10,88 @@ button {
     background-color: @main-color;
     outline-style: none;
     border: none;
-    border-width: 0px;
+    border-width: 2px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
-    border-radius: 0px;
+    border-radius: 10px;
     box-shadow: none;
     text-shadow: none;
     animation: gradient_f 20s ease-in infinite;
+    margin: 100px 10px 100px 10px;
 }
 
 button:focus {
     background-color: @wb-act-bg;
     background-size: 30%;
+    border-radius: 15px;
+    margin: 50px 10px 50px 10px;
 }
 
 button:hover {
     background-color: @wb-hvr-bg;
-    background-size: 40%;
-    border-radius: 30px;
+    background-size: 30%;
+    border-radius: 20px;
     animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+    margin: 0px 10px 0px 10px;
 }
 
 button:hover:nth-child(1) {
-    border-radius: 30px;
-    margin : 54px 0px 54px 108px;
+    /*margin : 54px 0px 54px 108px;*/
 }
 
 button:hover:nth-child(2) {
-    border-radius: 30px;
-    margin : 54px 0px 54px 0px;
+    /*margin : 54px 0px 54px 0px;*/
     background-color: @level-warn;
 }
 
 button:hover:nth-child(3) {
-    border-radius: 30px;
-    margin : 54px 0px 54px 0px;
-    background-color: @level-health;
+    /*margin : 54px 0px 54px 0px;*/
+    background-color: @level-shutdown;
 }
 
 button:hover:nth-child(4) {
-    border-radius: 30px;
-    margin : 54px 0px 54px 0px;
+    /*margin : 54px 0px 54px 0px;*/
     background-color: @level-shutdown;
 }
 
 button:hover:nth-child(5) {
-    border-radius: 30px;
-    margin : 54px 0px 54px 0px;
+    /*margin : 54px 0px 54px 0px;*/
     background-color: @level-shutdown;
 }
 
 button:hover:nth-child(6) {
-    border-radius: 30px;
-    margin : 54px 108px 54px 0px;
-    background-color: @level-health;
+    /*margin : 54px 108px 54px 0px;*/
+    background-color: @level-shutdown;
 }
 
 button:nth-child(1) {
-    background-image: image(url("/home/comfy/.config/wlogout/icons/lock_dark.png"), url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
-    border-radius: 48px 0px 0px 48px;
-    margin : 108px 0px 108px 108px;
+    background-image: image(url("/home/dms/.config/wlogout/icons/lock_dark.png"), url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+    /*margin : 108px 0px 108px 108px;*/
 }
 
 button:nth-child(2) {
-    background-image: image(url("/home/comfy/.config/wlogout/icons/logout_dark.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
-    border-radius: 0px 0px 0px 0px;
-    margin : 108px 0px 108px 0px;
+    background-image: image(url("/home/dms/.config/wlogout/icons/logout_dark.png"), url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+    /*margin : 108px 0px 108px 0px;*/
 }
 
 button:nth-child(3) {
-    background-image: image(url("/home/comfy/.config/wlogout/icons/suspend_dark.png"), url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
-    border-radius: 0px 0px 0px 0px;
-    margin : 108px 0px 108px 0px;
+    background-image: image(url("/home/dms/.config/wlogout/icons/shutdown_dark.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    /*margin : 108px 0px 108px 0px;*/
 }
 
 button:nth-child(4) {
-    background-image: image(url("/home/comfy/.config/wlogout/icons/shutdown_dark.png"), url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
-    border-radius: 0px 0px 0px 0px;
-    margin : 108px 0px 108px 0px;
+    background-image: image(url("/home/dms/.config/wlogout/icons/reboot_dark.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    /*margin : 108px 0px 108px 0px;*/
 }
 
 button:nth-child(5) {
-    background-image: image(url("/home/comfy/.config/wlogout/icons/reboot_dark.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
-    border-radius: 0px 0px 0px 0px;
-    margin : 108px 0px 108px 0px;
+    background-image: image(url("/home/dms/.config/wlogout/icons/reboot_dark.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    /*margin : 108px 0px 108px 0px;*/
 }
 
 button:nth-child(6) {
-    background-image: image(url("/home/comfy/.config/wlogout/icons/hibernate_dark.png"), url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
-    border-radius: 0px 48px 48px 0px;
-    margin : 108px 108px 108px 0px;
+    background-image: image(url("/home/dms/.config/wlogout/icons/reboot_dark.png"), url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+    /*margin : 108px 108px 108px 0px;*/
 }
