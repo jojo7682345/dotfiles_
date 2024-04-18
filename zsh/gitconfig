@@ -1,0 +1,14 @@
+[core]
+	editor = nvim
+	autocrlf = false
+[user]
+	email = 67917529+comfysage@users.noreply.github.com
+	name = comfysage
+[alias]
+	fpush = push --force-with-lease
+[init]
+	defaultBranch = mega
+[safe]
+	directory = *
+[pull]
+	rebase = true

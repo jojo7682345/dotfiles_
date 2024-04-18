@@ -44,7 +44,7 @@ print_state() {
   state=$(get_state)
   case $state in
     Playing) echo "";;
-    Paused) echo "";;
+    Paused) echo "";;
   esac
 }
 
@@ -55,7 +55,7 @@ get_current() {
   case $1 in
     update) get_meta -F -f '{{status}} {{title}} - {{artist}}' | while read line; do
       line=$(echo $line | sed -e '{s/^Playing//}')
-      line=$(echo $line | sed -e '{s/^Paused//}')
+      line=$(echo $line | sed -e '{s/^Paused//}')
       echo $line
     done;;
     *) get_meta -f '{{title}} - {{artist}}';;
