@@ -4,7 +4,7 @@ notify() {
   notify-send -u low "Screenshot saved" "saved as $1"
 }
 
-f_name=$(/mnt/d/bin/screenshot-name)
+f_name="Pictures/screenshot-clipboard.png"
 
 main() {
   mkdir -p "$(dirname $f_name)"
@@ -14,7 +14,7 @@ main() {
       grim "$f_name" || exit 1
       ;;
     area)
-      grim -g "$(select-region)" "$f_name" || exit 1
+			grim -g "$(slurp && sleep 1.0)" "$f_name" || exit 1
       ;;
   esac
   notify "$f_name"
