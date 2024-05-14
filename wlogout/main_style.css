@@ -1,14 +1,93 @@
 * {
-    border: none;
-    border-radius: 0px;
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
-    font-size: 11px;
-    min-height: 10px;
+  border: none;
+  border-radius: 0px;
+  font-family: "Maple Mono NF";
+  font-weight: bold;
+  font-size: 11px;
+  min-height: 10px;
+  background-image: none;
 }
 
 @import "themes/evergarden.css";
 
 window {
     background-color: rgba(0,0,0,0.5);
+}
+
+button#lock:hover {
+  background-color: @level-warn;
+}
+
+button#logout:hover {
+  background-color: @level-warn;
+}
+
+button#suspend:hover {
+  background-color: @level-health;
+}
+
+button#shutdown:hover {
+  background-color: @level-shutdown;
+}
+
+button#reboot:hover {
+  background-color: @level-shutdown;
+}
+
+button#reboot-win:hover {
+  background-color: @level-shutdown;
+}
+
+button#hibernate:hover {
+  background-color: @level-health;
+}
+
+button#lock {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/lock_dark.png"),
+    url("/usr/share/wlogout/icons/lock.png"),
+    url("/usr/local/share/wlogout/icons/lock.png")
+  );
+}
+button#logout {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/logout_dark.png"),
+    url("/usr/share/wlogout/icons/logout.png"),
+    url("/usr/local/share/wlogout/icons/logout.png")
+  );
+}
+button#suspend {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/suspend_dark.png"),
+    url("/usr/share/wlogout/icons/suspend.png"),
+    url("/usr/local/share/wlogout/icons/suspend.png")
+  );
+}
+button#shutdown {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/shutdown_dark.png"),
+    url("/usr/share/wlogout/icons/shutdown.png"),
+    url("/usr/local/share/wlogout/icons/shutdown.png")
+  );
+}
+button#reboot {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/reboot_dark.png"),
+    url("/usr/share/wlogout/icons/reboot.png"),
+    url("/usr/local/share/wlogout/icons/reboot.png")
+  );
+}
+button#reboot-win {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/reboot_dark.png"),
+    url("/usr/share/wlogout/icons/reboot.png"),
+    url("/usr/local/share/wlogout/icons/reboot.png")
+  );
+}
+button#hibernate {
+  background-image: image(
+    url("/home/comfy/.config/wlogout/icons/hibernate_dark.png"),
+    url("/usr/share/wlogout/icons/hibernate.png"),
+    url("/usr/local/share/wlogout/icons/hibernate.png")
+  );
 }

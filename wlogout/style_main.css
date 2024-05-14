@@ -1,0 +1,65 @@
+@import "main_style.css";
+
+* {
+  font-size: 16px;
+}
+
+button {
+  color: black;
+  background-color: @main-color;
+  outline-style: none;
+  border: none;
+  border-width: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  border-radius: 0px;
+  box-shadow: none;
+  text-shadow: none;
+  animation: gradient_f 20s ease-in infinite;
+}
+
+button:focus {
+  background-color: @wb-act-bg;
+  background-size: 30%;
+}
+
+button:hover {
+  background-color: @wb-hvr-bg;
+  background-size: 40%;
+
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682);
+
+  border-radius: 30px;
+}
+
+/* animation */
+
+button {
+  border-radius: 0px 0px 0px 0px;
+  margin: 129px 0px 129px 0px;
+}
+
+button:nth-child(1) {
+  border-radius: 36px 0px 0px 36px;
+  margin: 129px 0px 129px 129px;
+}
+
+button:last-child {
+  border-radius: 0px 36px 36px 0px;
+  margin: 129px 129px 129px 0px;
+}
+
+button:hover {
+  border-radius: 36px;
+  margin: 64px 0px 64px 0px;
+}
+
+button:hover:nth-child(1) {
+  margin: 64px 0px 64px 129px;
+}
+
+button:hover:last-child {
+  margin: 64px 129px 64px 0px;
+}

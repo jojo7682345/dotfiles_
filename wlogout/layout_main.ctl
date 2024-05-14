@@ -34,6 +34,13 @@
 }
 
 {
+    "label" : "reboot-win",
+    "action" : "systemctl reboot --boot-loader-entry=auto-windows",
+    "text" : "Reboot (win)",
+    "keybind" : "w"
+}
+
+{
     "label" : "hibernate",
     "action" : "systemctl hibernate",
     "text" : "Hibernate",
