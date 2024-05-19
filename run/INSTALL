@@ -2,7 +2,7 @@
 
 mkdir -p ~/.local/bin/
 
-export DOT_GIT=https://raw.githubusercontent.com/CrispyBaccoon/dotfiles/mega
+export DOT_GIT=https://raw.githubusercontent.com/comfysage/dotfiles/mega
 
 curl -fsSL ${DOT_GIT}/run/PKG | sh
 

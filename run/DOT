@@ -1,27 +1,22 @@
 #!/usr/bin/env bash
 
-# get hayashi
-echo "> INSTALLING HAYASHI <"
-curl -fsSL https://raw.githubusercontent.com/CrispyBaccoon/hayashi/mega/install.sh | sh
-export PATH="${PATH}:$HOME/.hayashi/pack/bin"
+# get saku
+echo "> INSTALLING SAKU <"
+curl -fsSL https://raw.githubusercontent.com/CrispyBaccoon/saku/mega/install.sh | sh
+eval "$(~/.saku/root/bin/sk env)"
 
-echo "> INSTALLING HAYASHI PACKAGES < "
-hayashi add rust
-export PATH="${PATH}:$HOME/.cargo/bin"
-hayashi add niru
-hayashi add neovim
-hayashi add tmux
-hayashi add ohmyzsh
+echo "> INSTALLING sk PACKAGES < "
+sk install rust
+sk install neovim
+sk install tmux
+sk install lime
 
 # get dotfiles
 echo "> CLONING DOTFILES <"
 cd
-git clone https://github.com/crispybaccoon/dotfiles.git ~/.link
-cd ~/.link && git submodule update --init --recursive
-cd ..
-
-# setup niru
-ln -s ~/.link/niru.yaml ~/.niru
+git clone --filter=blob:none https://github.com/comfysage/dotfiles.git ~/.dots
+cd ~/.dots
+git submodule update --init --recursive
 
 echo "> LINKING DOTFILES <"
-niru pull
+./install.sh
