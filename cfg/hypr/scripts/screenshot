@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+notify() {
+  notify-send -u low "Screenshot saved" "saved as $1"
+}
+
+screenshot-name() {
+  pictures_dir="${XDG_PICTURES_DIR:-$HOME/Pictures}"
+  screenshot_dir="${XDG_SCREENSHOTS_DIR:-$pictures_dir/Screenshots}"
+  sub_dir=$(date +"%Y-%m")
+  file_name="${screenshot_dir}/${sub_dir}/$(genid).png"
+
+  echo "$file_name"
+}
+
+f_name=$(screenshot-name)
+
+main() {
+  mkdir -p "$(dirname $f_name)"
+
+  case "$1" in
+    full)
+      grim "$f_name" || exit 1
+      ;;
+    area)
+      grim -g "$(select-region)" "$f_name" || exit 1
+      ;;
+    window)
+      grim -g "$(select-window)" "$f_name" || exit 1
+      ;;
+  esac
+  notify "$f_name"
+
+  cat "$f_name" | wl-copy
+}
+
+usage() {
+>&2 cat <<"EOF"
+	Requires an argument:
+  full 	- Fullscreen screenshot
+	area 	- Area screenshot
+	window 	- Window screenshot
+	Example:
+	./screenshot area
+	./screenshot full
+	./screenshot window
+EOF
+exit 1
+}
+
+[[ -z "$1" ]] && usage
+flag="$1"
+shift 1
+case $flag in
+  full|area|window) main $flag ;;
+  *) usage ;;
+esac

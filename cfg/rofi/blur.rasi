@@ -1,0 +1,7 @@
+window {
+  fullscreen: false;
+  width: auto;
+  height: auto;
+}
+
+mainbox {}

@@ -1,3 +1,9 @@
 [submodule "nvim"]
-	path = nvim
-	url = git@github.com:CrispyBaccoon/nvim.git
+	path = cfg/nvim
+	url = git@github.com:comfysage/nvim.git
+[submodule "rebos"]
+	path = cfg/rebos
+	url = git@github.com:comfysage/rebos.git
+[submodule "glow.yazi"]
+	path = cfg/yazi/plugins/glow.yazi
+	url = git@github.com:Reledia/glow.yazi.git

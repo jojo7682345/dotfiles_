@@ -1,0 +1,24 @@
+[pyprland]
+plugins = [
+  "expose",
+  "toggle_special",
+  "scratchpads"
+]
+
+[scratchpads.alsa]
+animation = "fromRight"
+command = "kitty --class alsamixer alsamixer -c 1"
+class = "alsamixer"
+position = "60% 10%"
+size = "30% 40%"
+unfocus = "hide"
+lazy = true
+
+[scratchpads.volume]
+animation = "fromRight"
+command = "pavucontrol"
+class = "pavucontrol"
+position = "60% 10%"
+size = "30% 40%"
+unfocus = "hide"
+lazy = true

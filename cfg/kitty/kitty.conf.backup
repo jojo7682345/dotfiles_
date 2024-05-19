@@ -1,0 +1,27 @@
+font_family Suki Mono NF
+font_size 10.0
+
+modify_font cell_height 120%
+
+background_opacity 1.0
+
+foreground #BEC2CC
+background #272B33
+cursorColor #BEC2CC
+
+color0  #272B33
+color8  #323842
+color1  #C97373
+color9  #C97373
+color2  #B3C2A3
+color10 #B3C2A3
+color3  #E3BF88
+color11 #D79E7D
+color4  #8FACC2
+color12 #8F9FC2
+color5  #AD9BC2
+color13 #AD9BC2
+color6  #9FBDA9
+color14 #89ADA9
+color7  #BEC2CC
+color15 #747C8E

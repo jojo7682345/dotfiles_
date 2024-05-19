@@ -1,0 +1,218 @@
+@define-color mod-cpu-color @main-color;
+@define-color mod-cpu-bg @main-bg;
+@define-color mod-memory-color @main-color;
+@define-color mod-memory-bg @main-bg;
+@define-color mod-battery-color @main-color;
+@define-color mod-battery-bg @main-bg;
+@define-color mod-backlight-color @main-color;
+@define-color mod-backlight-bg @main-bg;
+@define-color mod-clock-color @main-color;
+@define-color mod-clock-bg @main-bg;
+@define-color mod-workspaces-color @main-color;
+@define-color mod-workspaces-bg @main-bg;
+@define-color mod-window-color @main-color;
+@define-color mod-window-bg @main-bg;
+@define-color mod-taskbar-color @main-color;
+@define-color mod-taskbar-bg @main-bg;
+@define-color mod-network-color @main-color;
+@define-color mod-network-bg @main-bg;
+@define-color mod-bluetooth-color @main-color;
+@define-color mod-bluetooth-bg @main-bg;
+@define-color mod-pulseaudio-color @main-color;
+@define-color mod-pulseaudio-bg @main-bg;
+@define-color mod-mpris-color @main-color;
+@define-color mod-mpris-bg @main-bg;
+@define-color mod-custom-updates-color @main-color;
+@define-color mod-custom-updates-bg @main-bg;
+@define-color mod-custom-wallchange-color @main-color;
+@define-color mod-custom-wallchange-bg @main-bg;
+@define-color mod-custom-mode-color @main-color;
+@define-color mod-custom-mode-bg @main-bg;
+@define-color mod-custom-cliphist-color @main-color;
+@define-color mod-custom-cliphist-bg @main-bg;
+@define-color mod-custom-power-color @main-color;
+@define-color mod-custom-power-bg @main-bg;
+@define-color mod-custom-wbar-color @main-color;
+@define-color mod-custom-wbar-bg @main-bg;
+@define-color mod-custom-player-color @main-color;
+@define-color mod-custom-player-bg @main-bg;
+@define-color mod-custom-l_end-color @main-color;
+@define-color mod-custom-l_end-bg @main-bg;
+@define-color mod-custom-r_end-color @main-color;
+@define-color mod-custom-r_end-bg @main-bg;
+@define-color mod-custom-sl_end-color @main-color;
+@define-color mod-custom-sl_end-bg @main-bg;
+@define-color mod-custom-sr_end-color @main-color;
+@define-color mod-custom-sr_end-bg @main-bg;
+@define-color mod-custom-rl_end-color @main-color;
+@define-color mod-custom-rl_end-bg @main-bg;
+@define-color mod-custom-rr_end-color @main-color;
+@define-color mod-custom-rr_end-bg @main-bg;
+@define-color mod-tray-color @main-color;
+@define-color mod-tray-bg @main-bg;
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 10px;
+    min-height: 10px;
+}
+
+@import "themes/nix.css";
+
+window#waybar {
+    background: @bar-bg;
+}
+
+tooltip {
+    background: @tool-bg;
+    color: @tool-color;
+    border-radius: 22px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: @tool-border;
+}
+
+#workspaces button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: @wb-color;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button.active {
+    background: @wb-act-bg;
+    color: @wb-act-color;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#workspaces button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-color;
+    padding-left: 3px;
+    padding-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: @wb-color;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button.active {
+    background: @wb-act-bg;
+    color: @wb-act-color;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-color;
+    padding-left: 3px;
+    padding-right: 3px;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#cpu,
+#memory,
+#battery,
+#backlight,
+#clock,
+#workspaces,
+#window,
+#taskbar,
+#network,
+#bluetooth,
+#pulseaudio,
+#mpris,
+#custom-updates,
+#custom-wallchange,
+#custom-mode,
+#custom-cliphist,
+#custom-power,
+#custom-wbar,
+#custom-player,
+#custom-l_end,
+#custom-r_end,
+#custom-sl_end,
+#custom-sr_end,
+#custom-rl_end,
+#custom-rr_end,
+#tray {
+    color: @main-color;
+    background: @main-bg;
+    opacity: 1;
+    margin: 4px 0px 4px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#workspaces,
+#taskbar {
+    padding: 0px;
+}
+
+#custom-r_end {
+    border-radius: 0px 22px 22px 0px;
+    margin-right: 6px;
+    padding-right: 3px;
+}
+
+#custom-l_end {
+    border-radius: 22px 0px 0px 22px;
+    margin-left: 6px;
+    padding-left: 3px;
+}
+
+#custom-sr_end {
+    border-radius: 0px;
+    margin-right: 6px;
+    padding-right: 3px;
+}
+
+#custom-sl_end {
+    border-radius: 0px;
+    margin-left: 6px;
+    padding-left: 3px;
+}
+
+#custom-rr_end {
+    border-radius: 0px 8px 8px 0px;
+    margin-right: 6px;
+    padding-right: 3px;
+}
+
+#custom-rl_end {
+    border-radius: 8px 0px 0px 8px;
+    margin-left: 6px;
+    padding-left: 3px;
+}

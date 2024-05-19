@@ -1,0 +1,8 @@
+
+    "backlight": {
+        "on-click": "brightnessctl set 26%",
+        "on-click-right": "brightnessctl set 100%",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+
