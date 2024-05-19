@@ -19,7 +19,6 @@ alias start="cmd /c start.exe"
 alias code='"/mnt/c/Program Files/Code/Code.exe"'
 alias chrome="google-chrome --headless --hide-scollbars --remote-debugging-port=9222 --disable-gpu &"
 
-alias stew="node $KITCHEN/pan/stew"
 alias lz=lazygit
 
 alias fvi="$EDITOR \$(fzf - )"
