@@ -1,2 +1,5 @@
 @import "~/.config/rofi/select.rasi"
 
+element-icon {
+  size: 32px;
+}

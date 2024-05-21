@@ -188,7 +188,7 @@ element-icon {
   horizontal-align: 0.5;
   vertical-align: 0.5;
 
-  size: 32px;
+  size: 0px;
 
   background-color:            transparent;
   text-color: inherit;
