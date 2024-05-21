@@ -6,8 +6,8 @@
   "botanic": { "path": "$KITCHEN/botanic", "editor": true },
 
   "nix": { "path": "$HOME/dev/nixdots", "editor": true },
-  "nvim": { "path": "$HOME/.dots/nvim", "editor": false },
-  "lime": { "path": "$HOME/.dots/lime", "editor": true },
+  "nvim": { "path": "$HOME/.dots/cfg/nvim", "editor": false },
+  "lime": { "path": "$HOME/.dots/cfg/lime", "editor": true },
   "wallpapers": { "path": "$HOME/.wallpapers", "editor": false },
 
   "chai": { "path": "$HOME/dev/chaivim.git", "editor": false },
@@ -19,5 +19,5 @@
 
   "gtea": { "path": "$HOME/dev/gtea.git", "editor": true },
 
-  "rebos": { "path": "$HOME/.dots/rebos", "editor": true }
+  "rebos": { "path": "$HOME/.dots/cfg/rebos", "editor": true }
 }
