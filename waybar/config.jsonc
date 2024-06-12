@@ -16,7 +16,7 @@
 
 	"modules-left": ["custom/padd","custom/l_end","clock","custom/r_end", "custom/l_end","tray", "custom/r_end","custom/l_end","wlr/taskbar","custom/r_end","custom/padd"],
 	"modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
-	"modules-right": ["custom/padd","custom/l_end","custom/player","custom/r_end","custom/l_end","network","bluetooth","custom/r_end","custom/l_end","battery","backlight","pulseaudio","custom/r_end","custom/l_end","custom/wallchange","custom/cliphist","custom/r_endcustom/l_end","custom/power","custom/r_end","custom/padd"],
+	"modules-right": ["custom/padd","custom/l_end","custom/player","custom/r_end","custom/l_end","network","bluetooth","custom/r_end","custom/l_end","battery","backlight","pulseaudio","custom/r_end","custom/l_end","custom/wallchange","custom/cliphist","custom/power","custom/r_end","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -144,8 +144,8 @@
         "format": "󰆊{}",
         "exec": "echo ; echo 󰆊 switch wallpaper",
         "on-click": "~/.config/rofi/wallpaper.sh",
-        "on-click-right": "~/.config/rofi/wallpaper.sh",
-        "on-click-middle": "~/.config/rofi/wallpaper.sh",
+	"on-click-right": "~/.config/rofi/wallpaper.sh",
+	"on-click-middle": "~/.config/rofi/wallpaper.sh", 
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -154,6 +154,16 @@
         "format": "{}", //    //
         "exec": "echo ; echo  switch menubar",
         "on-click": "~/.config/waybar/wbarconfgen.sh n",
+        "on-click-right": "~/.config/waybar/wbarconfgen.sh p",
+        "on-click-middle": "~/.config/waybar/wbarconfgen.sh",
+        "interval" : 86400,
+        "tooltip": true
+   },
+
+    "custom/search": {
+	"format": "#{}",
+	"exec": "echo ; echo search apps",
+	"on-click": "~/.config/waybar/wbarconfgen.sh n",
         "on-click-right": "~/.config/waybar/wbarconfgen.sh p",
         "on-click-middle": "~/.config/waybar/wbarconfgen.sh",
         "interval" : 86400,
