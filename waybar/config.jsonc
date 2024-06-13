@@ -23,7 +23,8 @@
 
     "clock": {
         "format": "  <span color='#aaaaaa'><span color='#ffffff'>{:%H:%M</span>}</span>",
-        "tooltip-format": "<tt><big>{calendar}</big></tt>"
+        "format-alt": "  <span color='#aaaaaa'><span color='#ffffff'>{:%d-%m-%Y %H:%M</span>}</span>",
+	"tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
 	"wlr/taskbar": {
